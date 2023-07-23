@@ -1,9 +1,13 @@
-import Dashboard from './views/Dashboard'
+import theme from './styles/theme'
+import Signup from './views/Auth/Signup'
+import { ThemeProvider } from 'styled-components'
 
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+      <ThemeProvider theme={theme}>
+        <Signup />
+      </ThemeProvider>
     </div>
   )
 }

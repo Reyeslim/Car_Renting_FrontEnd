@@ -1,7 +1,8 @@
-import { FC, memo } from "react";
+import { FC, memo } from 'react'
+import Header from '../../components/Header'
 
 const Dashboard: FC = () => {
-  return <div>adios</div>;
-};
+  return <Header />
+}
 
-export default memo(Dashboard);
+export default memo(Dashboard)
