@@ -1,19 +1,22 @@
 import { FC, memo } from 'react'
 import { Formik } from 'formik'
+import { InputLabel, MenuItem } from '@mui/material'
 import { InitialValues, ValidationSchema } from './constants'
+import useLogic from './logic'
 import {
   Container,
   Form,
   GeneralContainer,
+  Info,
   Input,
   InputController,
   RolSelect,
   Submit,
   Title,
+  Link,
+  ButtonController,
 } from './styles'
 import { Props } from './types'
-import useLogic from './logic'
-import { InputLabel, MenuItem } from '@mui/material'
 
 const Signup: FC<Props> = ({ onSignup }) => {
   const { handleOnSubmit } = useLogic(onSignup)
@@ -123,11 +126,11 @@ const Signup: FC<Props> = ({ onSignup }) => {
               </InputController>
 
               <InputController>
-                <InputLabel id="demo-simple-select-label">
+                <InputLabel id="rol">
                   Are you a customer or a seller?
                 </InputLabel>
                 <RolSelect
-                  labelId="demo-simple-select-label"
+                  labelId="rol"
                   id="demo-simple-select"
                   value={values.rol}
                   name="rol"
@@ -139,7 +142,12 @@ const Signup: FC<Props> = ({ onSignup }) => {
                 </RolSelect>
               </InputController>
 
-              <Submit type="submit" value="Sign up" />
+              <ButtonController>
+                <Info>
+                  Already have an account? <Link to="/login">Log in now</Link>
+                </Info>
+                <Submit type="submit" value="Sign up" />
+              </ButtonController>
             </Form>
           )}
         </Formik>

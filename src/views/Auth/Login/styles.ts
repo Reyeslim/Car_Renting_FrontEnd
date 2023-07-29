@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { TextField, Button } from '@mui/material'
+import { Link as DefaultLink } from 'react-router-dom'
 
 export const SingupButton = styled(Button)``
 
@@ -52,4 +53,22 @@ export const Submit = styled.input`
     background-color: #9867c5;
     transform: translateY(-2px);
   }
+`
+export const Info = styled.p`
+  color: black;
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
+`
+export const Link = styled(DefaultLink)`
+  color: purple;
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+`
+export const ButtonController = styled.div`
+  display: flex;
+  flex-flow: row;
 `
