@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import Button from '@mui/material/Button'
+import { TextField, Button } from '@mui/material'
 
 export const SingupButton = styled(Button)``
 
@@ -23,8 +23,8 @@ export const Form = styled.form`
   box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
 `
 export const Title = styled.h1`
-  font-size: 50px;
-  margin-bottom: 50px;
+  font-size: 45px;
+  margin-bottom: 45px;
 `
 export const InputController = styled.div`
   position: relative;
@@ -32,34 +32,9 @@ export const InputController = styled.div`
   width: 90%;
   margin-bottom: 17px;
 `
-export const Input = styled.input`
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  border: 1px solid #dadce0;
-  border-radius: 7px;
-  font-size: 16px;
-  padding: 0 20px;
-  outline: none;
-  background: none;
-  z-index: 1;
 
-  &::placeholder {
-    color: transparent;
-  }
-`
-export const Label = styled.label`
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  padding: 0 4px;
-  background-color: white;
-  color: #dadce0;
-  font-size: 16px;
-  transition: 0.5s;
-  z-index: 0;
+export const Input = styled(TextField)`
+  width: 100%;
 `
 export const Submit = styled.input`
   display: block;
