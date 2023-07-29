@@ -16,7 +16,10 @@ const Router: FC = () => {
           path="/login"
           element={<Login onLogin={() => console.log('Logged')} />}
         />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route
+          path="/dashboard"
+          element={<Dashboard onLogout={() => console.log('logout')} />}
+        />
         <Route path="/*" element={<Navigate replace to="/signup" />} />
       </Routes>
     </BrowserRouter>
