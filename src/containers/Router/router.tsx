@@ -4,6 +4,7 @@ import Signup from '../../views/Auth/Signup'
 import Dashboard from '../../views/Dashboard'
 import Login from '../../views/Auth/Login'
 import PostDetails from '../../views/PostDetails'
+import CreatePost from '../../views/CreatePost'
 
 const Router: FC = () => {
   return (
@@ -23,6 +24,7 @@ const Router: FC = () => {
         />
 
         <Route path="/posts/:postId" element={<PostDetails />} />
+        <Route path="/create" element={<CreatePost />} />
 
         <Route path="/*" element={<Navigate replace to="/signup" />} />
       </Routes>

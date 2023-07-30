@@ -14,9 +14,9 @@ export const Content = styled.div`
   flex-flow: column;
   padding: 20px;
   text-align: center;
-  border: 2px solid black;
   width: 100%;
   border-radius: 5px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
 `
 
 export const Button = styled(DefaultButton)``
