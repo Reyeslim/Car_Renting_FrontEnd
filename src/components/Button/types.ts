@@ -5,5 +5,4 @@ export type Props = {
   children?: ReactNode
   onClick?: () => void
   type?: 'button' | 'submit'
-  color?: string
 }

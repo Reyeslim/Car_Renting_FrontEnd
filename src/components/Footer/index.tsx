@@ -1,5 +1,5 @@
 import { FC, memo } from 'react'
-import { Container, Content, Text } from './footerStyles'
+import { Container, Content, Text } from './styles'
 
 const Footer: FC = () => {
   return (

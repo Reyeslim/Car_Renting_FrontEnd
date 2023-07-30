@@ -3,10 +3,11 @@ import { styled } from 'styled-components'
 export const Container = styled.header`
   display: flex;
   flex-flow: row;
-  background-color: lightblue;
+  background-color: black;
   justify-content: space-between;
   width: 100%;
   height: 90px;
+  position: fixed;
 `
 export const Title = styled.h1`
   color: white;

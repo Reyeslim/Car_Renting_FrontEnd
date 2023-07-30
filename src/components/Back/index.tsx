@@ -1,5 +1,5 @@
 import { FC, memo, useCallback } from 'react'
-import { BackButton } from './backArrowStyles'
+import { BackButton } from './styles'
 import { useNavigate } from 'react-router-dom'
 
 const BackArrow: FC = () => {

@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Signup from '../../views/Auth/Signup'
 import Dashboard from '../../views/Dashboard'
 import Login from '../../views/Auth/Login'
+import PostDetails from '../../views/PostDetails'
 
 const Router: FC = () => {
   return (
@@ -20,6 +21,9 @@ const Router: FC = () => {
           path="/dashboard"
           element={<Dashboard onLogout={() => console.log('logout')} />}
         />
+
+        <Route path="/posts/:postId" element={<PostDetails />} />
+
         <Route path="/*" element={<Navigate replace to="/signup" />} />
       </Routes>
     </BrowserRouter>
