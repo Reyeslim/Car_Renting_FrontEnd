@@ -1,6 +1,5 @@
 import { styled } from 'styled-components'
 import { Select, TextField } from '@mui/material'
-import { Link as DefaultLink } from 'react-router-dom'
 
 export const GeneralContainer = styled.body`
   box-sizing: border-box;
@@ -69,14 +68,6 @@ export const Info = styled.p`
   font-size: 14px;
   margin-top: 16px;
   text-align: center;
-`
-export const Link = styled(DefaultLink)`
-  color: purple;
-  font-size: 14px;
-  margin-top: 16px;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
 `
 export const AdditionalController = styled.div``
 

@@ -1,102 +1,83 @@
-import styled from 'styled-components'
-import DefaultButton from '../../../components/Button'
+import { styled } from 'styled-components'
+import { Select, TextField } from '@mui/material'
 
-export const Container = styled.div``
-
-export const ButtonContainer = styled.div`
-  margin-top: 58px;
-  margin-left: 30px;
+export const GeneralContainer = styled.body`
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 `
-
-export const Form = styled.form`
-  height: 530px;
-  width: 340px;
-  background-color: rgba(245, 245, 245, 0.1);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-  padding: 30px;
-  color: #ffffff;
-  letter-spacing: 0.5px;
-  outline: none;
-  border: none;
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
   @media screen and (max-width: 768px) {
-    width: auto;
     height: auto;
   }
 `
+export const Form = styled.form`
+  background-color: white;
+  width: 700px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
 
+  @media screen and (max-width: 768px) {
+    margin: 50px;
+    font-size: 14px;
+  }
+`
+export const Title = styled.h1`
+  margin-bottom: 20px;
+`
 export const InputController = styled.div`
   display: flex;
   flex-flow: column;
 
   &:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 `
 
-export const Label = styled.label`
-  margin-top: 30px;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  color: #ffffff;
-
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
-    margin-top: 5px;
-  }
-`
-
-export const Input = styled.input`
-  height: 50px;
-  width: 95%;
-  background-color: rgba(199, 215, 245, 0.8);
-  border-radius: 3px;
-  padding: 0 10px;
-  margin-top: 8px;
-  font-size: 16px;
-  font-weight: 300;
-  color: #000000;
-
-  &:-webkit-autofill {
-    -webkit-text-fill-color: #000000;
-    box-shadow: 0 0 0px 1000px rgba(199, 215, 245, 0.8) inset;
-  }
-
-  &:focus {
-    background-color: rgba(199, 215, 245, 0.8);
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 30px;
-    font-size: 14px;
-  }
-`
-
-export const Button = styled(DefaultButton)`
-  margin-top: 50px;
+export const Input = styled(TextField)`
   width: 100%;
-  background-color: rgba(81, 185, 249, 0.45);
-  color: #ffff;
-  padding: 15px 0;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 50px;
+`
+export const DefaultSelect = styled(Select)``
+
+export const Submit = styled.input`
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
 
   &:hover {
-    text-decoration: underline;
-    text-shadow: 0px 0px 10px #cf0ea9;
+    background-color: #9867c5;
+    transform: translateY(-2px);
   }
+`
+export const Info = styled.p`
+  color: black;
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
+`
+export const AdditionalController = styled.div``
+
+export const Divider = styled.div`
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
 
   @media screen and (max-width: 768px) {
-    font-size: 15px;
-    margin-top: 5px;
+    flex-flow: column;
+    gap: 15px;
   }
 `

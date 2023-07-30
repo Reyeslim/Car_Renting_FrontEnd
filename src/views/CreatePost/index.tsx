@@ -183,22 +183,6 @@ const CreateForm: FC = () => {
                       <MenuItem value="5">5</MenuItem>
                     </DefaultSelect>
                   </InputController>
-                  {/* <InputController>
-                    <Input
-                      id="outlined-basic"
-                      label="Available days"
-                      variant="outlined"
-                      required
-                      name="availableTimes"
-                      onChange={handleChange}
-                      value={values.availableTimes}
-                      error={touched.availableTimes && !!errors.availableTimes}
-                      helperText={
-                        touched.availableTimes && errors.availableTimes
-                      }
-                      placeholder="Type the day of the week"
-                    />
-                  </InputController> */}
 
                   <InputController>
                     <InputLabel id="availableTimes" required>
